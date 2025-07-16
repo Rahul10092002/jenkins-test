@@ -11,3 +11,9 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.listen(port, () => {
   console.log(`Server is running at http://localhost:${port}`);
 });
+
+app.get('/', (req, res) => {
+  res.json({
+    message: 'Welcome to the demo page! Visit http://localhost:3000/demo.html to see the demo.'
+  });
+});
