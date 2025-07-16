@@ -14,6 +14,6 @@ app.listen(port, () => {
 
 app.get('/', (req, res) => {
   res.json({
-    message: 'Welcome to the demo page! Visit http://localhost:3000/demo.html to see the demo.'
+    message: 'Welcome to the demo page!'
   });
 });
